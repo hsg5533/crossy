@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossy Road</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <script src="./js/three.js"></script>
+    <script src="./js/GLTFLoader.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/BufferGeometryUtils.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/sweetalert.js"></script>
+  </head>
+  <body onload="firstRun()">
+    <div id="score"></div>
+    <div id="splash">
+      <div id="title">CROSSY ROAD<br />ENJOY!</div>
+      <div id="loading">
+        <div class="main letter">LOADING</div>
+        <div class="period1 letter">.</div>
+        <div class="period2 letter">.</div>
+        <div class="period3 letter">.</div>
+      </div>
+      <div id="instructions">
+        Use the arrow keys to move<br />
+        around
+      </div>
+      <div id="play">
+        PLAY
+        <button id="pressPlay" disabled onclick="init()"></button>
+      </div>
+    </div>
+    <button id="restart" onclick="init()">Play Again</button>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
